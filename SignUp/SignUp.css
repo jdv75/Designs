@@ -1,0 +1,257 @@
+body {
+    background-image: url("./images/white.avif");
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+}
+
+.sm-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 600px;
+    width: 1000px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.first {
+    padding: 70px 50px;
+    background-color: white;
+}
+
+.first h1{
+    color: grey;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.first h1 span {
+    color: black;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.signup input {
+    height: 50px;
+    border: 2px solid grey;
+    border-left: 4px solid palevioletred;
+    padding-left: 10px;
+}
+
+.signup .email {
+    border-bottom: 1px;
+}
+
+.remember {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    height: 20px;
+    margin: 30px 0;
+}
+
+.first .buttons {
+    height: 50px;
+}
+
+.first .buttons button{
+    padding: 10px 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.first .buttons .login {
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+
+
+.first .text {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.first .rights {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.second {
+    background-image: url("./images/beach.avif");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second .nav {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+    padding-right: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid white;
+}
+
+.second .nav h3 {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+.second .img {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.second .img img {
+    padding: 0;
+}
+
+.second .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    padding: 30px;
+}
+
+.second .buttons button {
+    padding: 10px 10px;
+    font-family: "Poppins", sans-serif;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.second .buttons .prev {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    border: 3px solid black;
+    font-weight: 500;
+}
+
+.second .buttons .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 3px solid white;
+    font-weight: 500;
+}
+
+@media (max-width: 950px) {
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sm-container {
+        display: flex;
+        width: 90%;
+        height: 750px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .first h1 {
+        text-align: center;
+    }
+
+    .first .text {
+        text-align: center;
+    }
+
+    .first .remember {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .first .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first .buttons button {
+        margin-bottom: 10px;
+    }
+
+    .first .rights {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .second {
+        width: 30%;
+        align-items: center;
+    }
+
+    .second .nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .second .nav h3 {
+        text-align: center;
+    }
+
+    .second .img {
+        background-color: transparent;
+        margin: 0;
+        width: 50%;
+        margin: 30px 25% 0 5%;
+    }
+
+    .second .img img {
+        height: 110px;
+        margin: 30px 25% 0 5%;
+    }
+
+    .second .buttons{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+
+}
+
+@media (max-width: 540px) {
+    .first h1 span {
+        position: relative;
+        top: -15px;
+    }
+    
+    .second .img img {
+        height: 100px;
+        margin: 30px 50px 0 5%;
+    }
+
+    .second .img {
+        margin: 30px 50px 0 5%;
+    }
+    
+}
