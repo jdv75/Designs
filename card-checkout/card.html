@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <img src="./images/house.avif" alt="House" class="fondo">
+        <div class="container">
+            <div class="first">
+                <div class="information">
+                    <div class="name">
+                        <h1>Ishibe House</h1>
+                        249,90 USD<span> / 1 night</span>
+                    </div>
+                    <div class="dates">
+                        Entire home <span>for</span> 1 guest <br>
+                        Tue, Oct 17, 2015
+                    </div>
+                </div>
+                
+            </div>
+            <div class="second">
+                <div class="summary">
+                    <h1>Recipient summary</h1>
+                    <div class="prices">
+                        <div class="item"><p>249,90 x 2 nights</p><h2>499.80 USD</h2></div>
+                        <div class="item"><p>Discount</p><h2>0.00 USD</h2></div>
+                        <div class="item"><p>Subtotal</p><h2>499.80 USD</h2></div>
+                        <div class="item"><p>Tax</p><h2>9.80 USD</h2></div>
+                        <div class="item-special"><p>TOTAL</p><h2>509.60 USD</h2></div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h1>Payment information</h1>
+                    <p>Name on credit card</p>
+                    <input type="text">
+                    <p>Credit card number</p>
+                    <input type="number" class="icon">
+                    <p>Expires on</p>
+                    <div class="date">
+                        <input type="month">
+                        <input type="year">
+                    </div>
+                    <p>CVC</p>
+                    <div class="cvc">
+                        <input type="number">
+                        <label>What is CVC?</label>
+                    </div>
+
+                    <button><span class="material-symbols-outlined">lock</span>Book security</button>
+                    <div class="security">
+                        <span class="material-symbols-outlined">lock</span>
+                        <label>Your credit card information is encrypted</label>
+                    </div>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
