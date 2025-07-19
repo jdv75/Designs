@@ -1,0 +1,230 @@
+main {
+    background-image: url(./images/Fondo.avif);
+    background-size: contain;
+    width: 100%;
+    height: 120vh;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    width: 70%;
+    height: 80vh;
+    top: 10%;
+    left: 5%;
+    background: linear-gradient(135deg, #71afff 0%, #3a27e1 100%);
+}
+
+.container nav {
+    display: flex;
+    width: 95%;
+    gap: 50px;
+    justify-content: right;
+    margin: 20px 50px 0 0;
+}
+
+.container nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white;
+    font-weight: 200;
+}
+
+.container nav ul li {
+    padding: 10px;
+}
+
+.container nav ul .special {
+    background-color: #71afff;
+    border-radius: 20px;
+}
+
+.container .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 80%;
+    height: 50%;
+}
+
+.container .info .items {
+    flex: 3;
+}
+
+.container .info .item {
+    flex: 1;
+}
+
+.container .info .items p {
+    color: white;
+    font-size: 12px;
+}
+
+.container .info .items h1 {
+    color: darkblue;
+    font-weight: 400;
+}
+
+.container .info .items h1 span {
+    font-weight: 600;
+}
+
+.info .items .search {
+    width: 60%;
+    background-color: white;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+.info .items .search input {
+    border: none;
+    width: 80%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.info .items .search .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(135deg, #71afff 0%, #3a27e1 100%);
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+
+/* jobs */
+
+.sm-container {
+    position: absolute;
+    bottom: 10px;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sm-container p {
+    color: #d2e4fc;
+}
+
+.sm-container .jobs {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+
+}
+
+.sm-container .jobs .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #d2e4fc;
+    margin: 10px 10px 10px 0;
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.sm-container .jobs .card > div {
+    flex: 1;
+    border-bottom: 1px solid darkblue;
+}
+
+.sm-container .jobs .card div img {
+    padding: 10px;
+    height: 90px;
+    width: 200px;
+}
+
+.sm-container .jobs .card .company > * {
+    margin-left: 20px;
+}
+
+.sm-container .jobs .card .company h3 {
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+
+.sm-container .jobs .card .company h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: rgb(7, 7, 183)
+}
+
+.sm-container .jobs .card .company p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    color: darkblue;
+}
+
+.sm-container .jobs .card .company p span {
+    font-size: 12px;
+    color: darkblue
+}
+
+.sm-container .jobs .card .last {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.sm-container .jobs .card .last .money {
+    display: flex;
+    flex-direction: column;
+}
+
+.sm-container .jobs .card .last .money > * {
+    margin-left: 20px;
+}
+
+.sm-container .jobs .card .last .money h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: linear-gradient(135deg, #71afff 0%, #3a27e1 100%);
+}
+
+.sm-container .jobs .card .last .money p {
+    font-size: 10px;
+    margin-top: 0;
+    color: darkblue;
+}
+
+.sm-container .jobs .card .last .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 40%;
+}
+
+.sm-container .jobs .card .last .logo .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(135deg, #71afff 0%, #3a27e1 100%);
+}
+
+
