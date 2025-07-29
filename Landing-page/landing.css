@@ -186,6 +186,7 @@ main {
     justify-content: space-between;
     gap: 30px;
     align-items: center;
+    border-bottom: none;
 }
 
 .sm-container .jobs .card .last .money {
