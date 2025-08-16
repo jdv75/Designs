@@ -167,3 +167,21 @@ main {
 .second .pressed {
     background-color: #1d5d69;
 }
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .first {
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+
+    }
+
+    .second {
+        width: 100%;
+    }
+}
