@@ -1,0 +1,530 @@
+body {
+    background-color: #c0eff1;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 70px;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+nav ul .selected {
+    border-left: 10px solid rgb(3, 160, 232);
+}
+
+nav ul li:hover {
+    color: #c92af5;
+    border-left: 6px solid #c92af5;
+    transform: translateX(2px);
+}
+
+nav ul .menu {
+    height: 70px;
+    border-bottom: 4px solid rgb(217, 216, 216);
+}
+
+/* PROFILE */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 120px;
+    margin-top: 40px;
+    height: 100vh;
+    width: 90%;
+}
+
+main .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .actions .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+main .actions .arrow span {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .actions .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main .actions .buttons button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .actions .buttons .email {
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 160, 232);
+}
+
+main .actions .buttons .points {
+    background-color: rgb(3, 160, 232);
+    color: rgb(255, 255, 255);
+}
+
+main .container {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4fr 1fr;
+    grid-auto-columns: repeat(3, 1fr);
+}
+
+main .container .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+main .container .profile img {
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    border: 5px solid rgb(3, 160, 232);
+}
+
+main .container .profile h1 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+main .container .profile p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color:rgb(3, 160, 232);
+}
+
+main .container .profile .info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+main .container .profile h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+     margin-bottom: 10px;
+     font-weight: 400;
+     color:black;
+}
+
+#first {
+    margin-top: 15px;
+}
+
+#last {
+    margin-bottom: 5px;
+}
+
+main .container .profile .stars {
+    color: rgb(224, 224, 20);
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(3, 160, 232);
+}
+
+main .container .profile .stars span {
+    font-size: 40px;
+}
+
+main .container .profile .owner {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 60px;
+    width: 90%;
+    gap: 10px;
+    border-top: 1px solid rgb(3, 160, 232);
+    padding: 5px 0;
+}
+
+main .container .profile .owner img {
+    height: 40px;
+    width: 40px;
+    margin: 0 0 0 20px;
+}
+
+main .container .profile .owner span {
+    color: rgb(3, 160, 232);
+}
+
+
+main .container .inbox {
+    grid-column: span 2;
+}
+
+/* INBOX */
+
+main .container .inbox {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+main .container .inbox .bar {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(217, 216, 216);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+main .container .inbox .bar li {
+    color: rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    transition: transform 0.3 ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+main .container .inbox .bar .select {
+    color: #c92af5;
+    border-bottom: 4px solid #c92af5;
+    transform: translateY(-2px);
+}
+
+main .container .inbox .bar li:hover {
+    color: #c92af5;
+    border-bottom: 4px solid #c92af5;
+    transform: translateY(-2px);
+
+}
+
+main .container .inbox .bar .arrows {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .inbox .bar .arrows span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: transform 0.3 ease;
+    cursor: pointer;
+    color:rgb(105, 105, 105);
+    font-size: 20px;
+}
+
+main .container .inbox .bar .arrows span:hover {
+    color: #c92af5;
+}
+
+main .container .inbox .deals {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70%;
+    height: 60px;
+}
+
+main .container .inbox .deals #deal {
+    color:rgb(105, 105, 105);
+}
+
+main .container .inbox .deals #add {
+    cursor: pointer;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(189, 226, 244);
+    color: rgb(3, 160, 232);
+}
+
+main .container .inbox .request {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #fff; 
+    border-left: 10px solid blue;
+    margin-bottom: 30px;
+}
+
+main .container .inbox .request img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 0 30px;
+}
+
+main .container .inbox .request .message {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .inbox .request .message > span{
+    color: rgb(105, 105, 105);
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.inbox .request .message strong {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.inbox .request .message strong span {
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+}
+
+.inbox .request .message strong .pen {
+    margin-left: 20px;
+    background-color: #fff;
+    font-size: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.inbox .request .message strong .pen span {
+    background-color: rgb(217, 216, 216);
+    color:rgb(105, 105, 105);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.inbox .request .message .info_message {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color:rgb(105, 105, 105)
+}
+
+.inbox .request .message .info_message span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+/* APPS */
+
+.app {
+    width:100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .name {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 80px;
+}
+
+.app .name span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app .name #options {
+    cursor: pointer;
+}
+
+.app .name span img {
+    width: 40px;
+    height: 40px;
+}
+
+.app .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+
+.app .info > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.app .info > span span a {
+    color:#12c6c6
+}
+
+.app .info .circle {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(3, 160, 232);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #a2eaea;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #b0d2f9;
+    cursor: pointer;
+    color: rgb(3, 160, 232);
+}
+
+.add h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.add span {
+    font-size: 50px;
+}
+
+.menu_add {
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    height: 300px;
+    background-color: rgb(188, 188, 188);;
+    border-radius: 10px;
+}
+
+.menu_add form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu_add form input {
+    width: 70%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+
+.menu_add form button {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
